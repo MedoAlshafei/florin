@@ -1,3 +1,4 @@
+import 'package:florin/features/home/data/models/product_model.dart';
 import 'package:florin/features/home/domain/entities/product.dart';
 import 'package:flutter/material.dart';
 
@@ -12,7 +13,7 @@ import '../widgets/testimonials_section.dart';
 class HomePage extends StatelessWidget {
   const HomePage({super.key, required this.product});
 
-  final List<Product> product;
+  final List<ProductModel> product;
 
   @override
   Widget build(BuildContext context) {

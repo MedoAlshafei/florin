@@ -6,7 +6,7 @@ import 'product_card.dart';
 class ProductGrid extends StatelessWidget {
   const ProductGrid({super.key, required this.products});
 
-  final List<Product> products;
+  final List<ProductModel> products;
 
 
   @override

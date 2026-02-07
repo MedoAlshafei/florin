@@ -24,8 +24,8 @@ class ProductModel extends Product {
   });
 
   factory ProductModel.fromJson(Map<String, dynamic> json) => ProductModel(
-    id: json["id"],
-    name: json["name"],
+    id: json["id"] ?? "",
+    name: json["name"]?? "",
     slug: json["slug"],
     permalink: json["permalink"],
     dateCreated: DateTime.parse(json["date_created"]),
