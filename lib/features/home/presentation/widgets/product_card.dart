@@ -16,7 +16,7 @@ class ProductCard extends StatelessWidget {
             blurRadius: 4,
             offset: const Offset(0, 2),
             color: Colors.black.withOpacity(.05),
-          )
+          ),
         ],
       ),
       child: Column(
@@ -49,19 +49,21 @@ class ProductCard extends StatelessWidget {
                   children: [
                     Text(
                       product.price,
-                      style:
-                          TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
+                      style: TextStyle(
+                        fontSize: 16,
+                        fontWeight: FontWeight.bold,
+                      ),
                     ),
                     CircleAvatar(
                       radius: 16,
                       backgroundColor: const Color(0xff13ec5b),
                       child: const Icon(Icons.add, color: Colors.black),
-                    )
+                    ),
                   ],
-                )
+                ),
               ],
             ),
-          )
+          ),
         ],
       ),
     );

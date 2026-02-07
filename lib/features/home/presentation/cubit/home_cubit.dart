@@ -11,7 +11,6 @@ class HomeCubit extends Cubit<HomeState> {
 
   Future<void> loadHome() async {
     emit(HomeLoading());
-
     try {
       final products = await getProducts();
       emit(HomeLoaded(products));

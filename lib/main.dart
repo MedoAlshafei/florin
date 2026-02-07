@@ -1,5 +1,5 @@
 import 'package:florin/core/theme/app_theme.dart';
-import 'package:florin/features/home/presentation/widgets/home_page.dart';
+import 'package:florin/features/home/presentation/screens/home_screen.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -15,7 +15,8 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       theme: AppTheme.lightTheme,
       darkTheme: AppTheme.darkTheme,
-      r
+      onGenerateRoute: (settings) =>
+          MaterialPageRoute(builder: (context) => const HomeViews()),
     );
   }
 }

@@ -1,5 +1,4 @@
 import 'package:florin/features/home/data/models/product_model.dart';
-import 'package:florin/features/home/domain/entities/product.dart';
 import 'package:flutter/material.dart';
 
 import '../widgets/home_app_bar.dart';

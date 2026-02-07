@@ -1,5 +1,4 @@
 import 'package:florin/features/home/data/models/product_model.dart';
-import 'package:florin/features/home/domain/entities/product.dart';
 import 'package:flutter/material.dart';
 import 'product_card.dart';
 
@@ -7,7 +6,6 @@ class ProductGrid extends StatelessWidget {
   const ProductGrid({super.key, required this.products});
 
   final List<ProductModel> products;
-
 
   @override
   Widget build(BuildContext context) {
@@ -31,8 +29,9 @@ class ProductGrid extends StatelessWidget {
               childAspectRatio: .65,
             ),
             itemCount: products.length,
-            itemBuilder: (context, index) => ProductCard(product: products[index]),
-          ),  
+            itemBuilder: (context, index) =>
+                ProductCard(product: products[index]),
+          ),
         ],
       ),
     );
