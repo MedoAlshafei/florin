@@ -1,0 +1,18 @@
+import 'package:dio/dio.dart';
+
+class ApiClient {
+  late final Dio dio;
+
+  ApiClient() {
+    dio = Dio(
+      BaseOptions(
+        baseUrl: 'https://florin-eg.com/wp-json/wc/v3/',
+        connectTimeout: const Duration(seconds: 15),
+        receiveTimeout: const Duration(seconds: 15),
+        headers: {
+          'Accept': 'application/json',
+        },
+      ),
+    );
+  }
+}
